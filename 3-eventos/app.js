@@ -43,3 +43,21 @@ const validar = (event) => {
 }
 formulario.addEventListener("submit", validar);
 
+//-------------validar campos--------------------------
+const validarLetras = (e) =>{
+  const letras = /^[a-zA-Z\s]/;
+  if(!letras.test(e.key)){
+    e.preventDefault();
+  }
+}
+nombre.addEventListener("keydown", validarLetras);
+apellido.addEventListener("keydown", validarLetras);
+
+const validarNumero = (e) =>{
+  const numeros = /[0-9]/;
+  if(!numeros.test(e.key)){
+    e.preventDefault();
+  }
+}
+telefono.addEventListener("keydown", validarNumero);
+documento.addEventListener("keydown", validarNumero);
