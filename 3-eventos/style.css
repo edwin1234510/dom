@@ -12,6 +12,7 @@
   --drover: #FCECAC;
   --sycamore: #8C7C3C;
   --white: #fff;
+  --errores: #ea1818;
   --max-width: 1400px;
   --padding: 10px;
   --margin: 10px;
@@ -120,7 +121,8 @@ form {
   padding: var(--padding);
 }
 
-input {
+input,
+select {
   display: block;
   width: 90%;
   padding: calc(var(--padding) + 4px);
@@ -130,6 +132,18 @@ input {
   outline: none;
   font-size: 1rem;
   color: var(--sycamore);
+}
+
+.error {
+  border: solid 2px var(--errores);
+}
+
+.validado {
+  border: solid 1px var(--heavyMetal);
+}
+
+span {
+  margin-left: 22px;
 }
 
 button {
