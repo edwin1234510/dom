@@ -142,6 +142,19 @@ select {
   border: solid 1px var(--heavyMetal);
 }
 
+.radio_genero {
+  display: flex;
+}
+
+.habilidades {
+  display: flex;
+  width: 30px;
+}
+
+.contenedor_politicas {
+  display: flex;
+}
+
 span {
   margin-left: 22px;
 }

@@ -35,7 +35,34 @@
             <div class="padre_input"><input type="number" name="documento" placeholder="Documento" required></div>
             <div class="padre_input"><input type="text" name="usuario" placeholder="Usuario" required></div>
             <div class="padre_input"><input type="password" name="contasena" placeholder="Contraseña" required></div>
-            <div class="padre_input">
+            <div class="radio_genero">
+              <input name="genero" value="masculino" type="radio" required>masculino
+              <input name="genero" value="femenino" type="radio" required>femenino
+            </div>
+            <div class="contenedor_habilidades">
+              <div class="habilidades">
+                <input type="checkbox" id="java" name="habilidad[]" value="1" required>
+                <label for="habilidada">java</label>
+              </div>
+              <div class="habilidades">
+                <input type="checkbox" id="css" name="habilidad[]" value="2" required>
+                <label for="habilidada">css</label>
+              </div>
+              <div class="habilidades">
+                <input type="checkbox" id="html" name="habilidad[]" value="3" required>
+                <label for="habilidada">html</label>
+              </div>
+              <div class="habilidades">
+                <input type="checkbox" id="js" name="habilidad[]" value="4" required>
+                <label for="habilidada">js</label>
+              </div>
+              <div class="habilidades">
+                <input type="checkbox" id="pyton" name="habilidad[]" value="5" required>
+                <label for="habilidada">python</label>
+              </div>
+
+            </div>
+            <div class="contenedor_politicas">
               <input type="checkbox" id="politicas">
               <label for="politicas">politica</label>
             </div>

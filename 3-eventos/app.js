@@ -13,6 +13,9 @@ const usuario = document.querySelector('[name="usuario"]');
 const contasena = document.querySelector('[name="contasena"]');
 const politicas = document.querySelector('#politicas');
 const boton = document.querySelector('#btn_validar')
+const ciudad = document.querySelector('[name="ciudad"]')
+// const genero = document.querySelectorAll('#genero')
+
 //----------------funciones---------------------------
 const limpiar = (evento) => {
   if (evento.target.value !== "") {
@@ -30,6 +33,7 @@ const acepta = () => {
     boton.removeAttribute('disabled');
   }
 }
+nombre.getAttribute
 //----------------eventos-------------------------------
 
 
@@ -99,13 +103,14 @@ const acepta = () => {
 addEventListener("DOMContentLoaded", acepta)
 politicas.addEventListener("change", acepta);
 formulario.addEventListener("submit", validar);
-nombre.addEventListener("blur", limpiar)
-apellido.addEventListener("blur", limpiar)
-telefono.addEventListener("blur", limpiar)
-documento.addEventListener("blur", limpiar)
-usuario.addEventListener("blur", limpiar)
-contasena.addEventListener("blur", limpiar)
-
+nombre.addEventListener("blur", limpiar);
+apellido.addEventListener("blur", limpiar);
+telefono.addEventListener("blur", limpiar);
+documento.addEventListener("blur", limpiar);
+usuario.addEventListener("blur", limpiar);
+contasena.addEventListener("blur", limpiar);
+ciudad.addEventListener("blur", limpiar);
+// genero.addEventListener("blur", limpiar)
 //-------------validar campos--------------------------
 const validarLetras = (e) => {
   const letras = /^[a-zA-Z\s]/;
